@@ -30,7 +30,5 @@ body{
   font-family:'Poppins', sans-serif;
   font-weight:300;
   line-height: 1.6;
-  background-image: linear-gradient(to bottom right, var( --color-blue-light-1),var(--color-blue-dark-2));
-  /*Acomodate the content height with min-height */
-  min-height: 100vh;
+
 }
