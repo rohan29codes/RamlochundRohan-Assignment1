@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,23 +8,28 @@
 
   <!-- Links for font & css below -->
   <link rel="stylesheet" href="css/main.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <title>Home</title>
 
 
 
 </head>
+
 <body>
   <div class="container">
     <div class="header">Header
       <div class="logos">
         <div class="logo1"></div>
-        <img src="images/logo.png" alt="ICACIE LOGO" >
+        <img src="images/logo.png" alt="ICACIE LOGO">
         <img src="images/udm.png" alt="UDM LOGO">
       </div>
     </div>
     <!--Navigation bar-->
-     <div class="navbar" id="myTopnav">
+    <div class="navbar" id="myTopnav">
       <a href="#" class="active navbar__link">Home</a>
       <a href="#" class="navbar__link">Keynotes</a>
       <a href="#" class="navbar__link">Commitee</a>
@@ -41,12 +47,42 @@
         <i class="fa fa-bars"></i>
       </a>
     </div>
-   
 
-    <!--Conference banner description-->
-    <div class="banner">Banner</div>
-    <div class="content">Content</div>
-    <div class="footer">Footer</div>
+    <div class="advert">
+      <p>8th Edition of ICACIE 2023 & University Des Mascareignes Greets You. </p>
+    </div>
+
+    <!--Banner & description-->
+    <div class="Banner">
+
+      <div class="banner-img">
+        <img src="images/tech1.jpg" alt="">
+      </div>
+
+      <div class="banner-description">
+        <h1 class="banner-description__title">8<sup>th</sup> International Conference on Advanced Computing and
+          Intelligent Engineering</h1>
+        <p class="banner-description__place">Université des Mascareignes (UdM), Mauritius</p>
+        <p class="banner-description__date">29-31 January, 2023</p>
+      </div>
+
+    </div>
+
+
+
+
   </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+  </script>
 </body>
+
 </html>

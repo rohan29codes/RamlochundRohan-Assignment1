@@ -1,7 +1,7 @@
 /* Header */
 .header {
-  height: 18rem;
-  border-bottom: 1px solid var(--color-grey-c0);
+  height: 20rem;
+  
 }
 
 html,
@@ -30,10 +30,12 @@ body {
     align-items: center;
 
   }
-
-  .logo1 .logo2 {
-    justify-items: center;
+  .header{
+    margin-bottom: 4rem;
   }
+
+
+
 }
 
 /* Navigation bar */
@@ -117,17 +119,167 @@ body {
   opacity: 0.4;
   transform: scale(0.8, 0.8);
 }
+/*Media query for navigation bar*/
 
+@media screen and (max-width: 800px) {
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+
+  .ICACIE-content {
+    flex-direction: column;
+    width: 97%;
+    margin: auto;
+
+  }
+
+
+
+}
+
+@media screen and (max-width: 800px) {
+
+  .navbar.responsive {
+    position: relative;
+  }
+
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color:var(--color-blue-light-2);
+  }
+
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+   
+
+  }
+
+
+  .content-description {
+
+    padding-bottom: 1%;
+  }
+
+  .ICACIE-content__desc {
+
+
+    width: 100%;
+    margin: 1% 0.5% 2% 0.5%;
+
+  }
+
+  .ICACIE-content__daysLeft {
+
+
+    margin: 1% 0.5% 2% 0.5%;
+    width: 100%;
+
+  }
+}
+/*Advert for UDM & ICACIA*/
+.advert {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  flex-wrap: wrap;
+
+
+}
+
+.advert p {
+
+
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.5rem;
+
+
+  background: linear-gradient(90deg, var(--color-blue-dark-1), var(--color-blue-light-2), var(--color-blue-dark-2));
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 8s linear infinite;
+  position: relative;
+
+
+
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+
+  100% {
+    background-position-x: 500%;
+  }
+}
 /* Banner */
-.banner {
-  background-color: blueviolet;
-}
+.banner-img img {
 
-.content {
-  background-color: brown;
+  width: 100%;
 
 }
 
+.banner-description {
+
+  display: flex;
+
+  font-size: 2.8rem;
+  color: white;
+  margin-top: -19%;
+  margin-left: 6%;
+  line-height: 1.7;
+  flex-direction: column;
+
+}
+
+.banner-description__place {
+
+  font-weight: 600;
+}
+
+.banner-description__title {
+
+  font-size: 2.6rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+/*Media query banner*/
+@media screen and (max-width: 990px){
+
+  .banner-description {
+
+    width: 100%;
+    height: 100%;
+    margin: -17rem 2rem 10rem 2rem;
+    font-size: 1.6rem;
+
+  }
+
+  .banner-description__place {
+    height: 100%;
+    width: 100%;
+  }
+
+
+
+
+}
 .footer {
   background-color: orange;
 }
