@@ -1,20 +1,18 @@
-
 /* Header */
 .header {
-  height: 30rem;
+  height: 18rem;
   border-bottom: 1px solid var(--color-grey-c0);
 }
+
 html,
 body {
   overflow-x: hidden;
 }
+
 /* Logo images */
 .logos {
   display: flex;
   justify-content: center;
-  background-color: red;
-
-
 }
 
 
@@ -32,15 +30,95 @@ body {
     align-items: center;
 
   }
-  .logo1 .logo2{
+
+  .logo1 .logo2 {
     justify-items: center;
   }
 }
 
+/* Navigation bar */
 .navbar {
-  background-color: lightseagreen;
+  overflow: hidden;
+  background-color: var(--color-blue-dark-2);
+  z-index: 1000;
+  position: relative;
 }
 
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  font-size: 18px;
+
+}
+
+
+.navbar a:hover {
+
+  color: var(--color-white);
+  background-color: var(--color-blue-light-1);
+
+}
+
+
+.navbar a.active {
+  background-color: rgb(0, 171, 189);
+  color: white;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+.navbar__link {
+
+  transition: all 0.9s;
+  position: relative;
+}
+
+.navbar__link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transition: all 0.7s;
+}
+
+.navbar__link:hover::before {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+}
+
+.navbar__link::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+  transition: all 0.1s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: scale(1,1);
+}
+
+.btn::after {
+  border: 1px solid var(--color-blue-dark-2);
+}
+
+.navbar__link:hover::after {
+  opacity: 0.4;
+  transform: scale(0.8, 0.8);
+}
+
+/* Banner */
 .banner {
   background-color: blueviolet;
 }
