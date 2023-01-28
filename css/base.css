@@ -1,0 +1,36 @@
+:root {
+  --color-blue-light-1: rgb(84, 198, 211);
+  --color-blue-light-2: rgb(0, 183, 199);
+  --color-blue-light-3: rgb(0, 171,189);
+  --color-blue-dark-1: rgb(0, 125, 190);
+  --color-blue-dark-2: rgb(0, 88, 138);
+  --color-dark: rgb(35, 31, 32);
+  --color-white: #FCFCFC;
+  --color-grey-c0: rgb(167,169, 172);
+  --color-grey-c7: rgb(99,100, 102);
+  --line: 1px solid var(--color-blue-light-3);
+  --shadow: 0 10px 30px rgba(211, 211, 211, 0.363); 
+}
+/* reset the css */
+*,
+::before, 
+::after
+{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+
+}
+html{
+  font-size: 62.5%;
+  /* default browser font-size is 16px, this means that 1rem=16px */
+  /* 62.5/100*16=10px , Now 1 rem=10px */
+}
+body{
+  font-family:'Poppins', sans-serif;
+  font-weight:300;
+  line-height: 1.6;
+  background-image: linear-gradient(to bottom right, var( --color-blue-light-1),var(--color-blue-dark-2));
+  /*Acomodate the content height with min-height */
+  min-height: 100vh;
+}
