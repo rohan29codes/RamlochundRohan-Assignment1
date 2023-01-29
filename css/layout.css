@@ -1145,3 +1145,111 @@ h2 {
   left: 0;
   bottom: 0;
 }
+/*Accomodation*/
+
+ .card-container__accomodation {
+
+  border-style: none;
+  background-color: var(--color-blue-dark-2);
+  margin: 1rem;
+  width: 70rem;
+
+  text-align: center;
+  line-height: 1.5;
+
+
+}
+.card-container__names{
+  display: flex;
+
+}
+.card-container__names img {
+
+  width: 40rem;
+  height: 20rem;
+  box-sizing: border-box;
+  transition: transform .2s;
+
+}
+
+.card-container__names img:hover {
+
+  transform: scale(1.1);
+}
+
+.card-container__names {
+
+  margin: 0;
+}
+
+.card-container__images img {
+
+padding: 0;
+
+}
+
+
+.card-container__details {
+
+  width: 30rem;
+  padding: 1.5rem;
+}
+
+.card-container__names
+h2 {
+
+
+  padding: 15rem;
+  margin: 1rem;
+
+} 
+
+.card-container__descrip {
+
+display: block;
+width: 60rem;
+
+}
+.card-container__descrip p {
+  color: white;
+  display: block;
+
+}
+
+
+
+
+
+
+/*booking button*/
+.book-btn {
+  width: 15rem;
+  height: 5rem;
+  padding: 5px 10px;
+  font-weight: 500;
+  transition: all 0.7s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-here {
+  background: var(--color-blue-dark-1);
+  color: #fff;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+.btn-here:hover {
+  background: var(--color-blue-dark-2);
+  color: var(--color-blue-light-1);
+
+}
+
+
+.btn-here:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+} 
