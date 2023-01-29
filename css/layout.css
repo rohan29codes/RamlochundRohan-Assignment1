@@ -453,7 +453,7 @@ body {
   font-size: 1.5rem;
   border: 1px solid var(--color-blue-dark-2);
   padding: 2%;
-  
+
 
 
 }
@@ -755,14 +755,17 @@ body {
   flex-direction: column;
 
 }
-.borderMain{
-   border: 1px solid var(--color-blue-dark-2);
+
+.borderMain {
+  border: 1px solid var(--color-blue-dark-2);
   padding: 2%;
 }
-.previous-conference{
-   border: 1px solid var(--color-blue-dark-2);
+
+.previous-conference {
+  border: 1px solid var(--color-blue-dark-2);
   padding: 2%;
 }
+
 /*Medias*/
 @media screen and (max-width: 750px) {
 
@@ -892,6 +895,7 @@ body {
 
 }
 
+/*Media for keynotes also */
 @media screen and (max-width: 650px) and (max-width: 500px) and (max-width: 475px) {
 
   .ICACIE-content {
@@ -1014,10 +1018,130 @@ body {
   }
 
 
+  .keynote-speakers,
+  .inaugural-speaker {
+
+    flex-direction: column;
+  }
+
+  .card-container__detail h2,
+  .card-container__desc {
+
+    width: 80%;
+  }
 
 
 
 
 
+}
 
+/*Speaker*/
+
+.inaugural-speaker {
+
+  display: flex;
+  justify-content: left;
+}
+
+.card-container {
+
+  border-radius: 1px;
+  background-color: var(--color-blue-light-1);
+  margin: 1.5rem;
+  text-align: center;
+  line-height: 1.5;
+
+}
+
+.card-container__name img {
+
+  width: 135px;
+  height: 170px;
+  object-fit: cover;
+  margin: auto;
+  display: block;
+  flex: 40%;
+  box-sizing: border-box;
+  transition: transform .2s;
+
+}
+
+.card-container__name img:hover {
+
+  transform: scale(1.1);
+}
+
+.card-container__name {
+
+  margin: 1.5rem 0;
+}
+
+.card-container__image img {
+
+  padding: 1.5rem;
+
+}
+
+
+.card-container__detail {
+
+  width: 30rem;
+  padding: 1.5rem;
+}
+
+.keynote-speakers__title,
+h2 {
+
+
+  padding: 1.5rem;
+  margin: 1rem;
+
+}
+
+
+
+.keynote-speakers,
+.inaugural-speaker {
+
+
+  justify-content: left;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*video button*/
+.video-btn {
+  width: 15rem;
+  height: 5rem;
+  padding: 5px 10px;
+  font-weight: 500;
+  transition: all 0.7s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-watch {
+  background: var(--color-blue-dark-1);
+  color: #fff;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+.btn-watch:hover {
+  background: var(--color-grey-c0);
+  color: var(--color-blue-light-1);
+  box-shadow:
+    -7px -7px 20px 0px #fff9,
+
+    4px 4px 5px 0px #0001;
+}
+
+
+.btn-watch:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
 }
