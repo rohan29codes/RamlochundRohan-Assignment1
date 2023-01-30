@@ -370,7 +370,8 @@ body {
   color: var(--color-blue-light-3);
 
 }
-ICACIE-title1 h3{
+
+ICACIE-title1 h3 {
   color: red;
 }
 
@@ -1035,7 +1036,7 @@ ICACIE-title1 h3{
   }
 
 
-  
+
 
 
 
@@ -1050,7 +1051,7 @@ ICACIE-title1 h3{
   justify-content: left;
 }
 
-.card-container{
+.card-container {
 
   border-radius: 1px;
   background-color: var(--color-blue-light-1);
@@ -1154,6 +1155,7 @@ h2 {
   left: 0;
   bottom: 0;
 }
+
 /*Accomodation*/
 @media screen and (max-width: 800px) {
 
@@ -1161,25 +1163,64 @@ h2 {
 
 
 
- 
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-  
-  
+
+
+
+
   }
-  .card-container__names{
+
+ .accomodation .card-container__accomodation {
+  width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  
+    margin-left: 0rem;
+    align-items: center;
+
+  }
+
+  /*image*/
+  .card-container__names {
     display: flex;
     flex-direction: column;
-  
+    padding: 1rem;
+
   }
-  
+  .accomodation .card-container__accomodation .card-container__descrip{
+    width: 30rem;
+    height: 25rem;
+    padding: 1rem;
+    align-items: center;
+
+  }
+.accbtn{
+    position: absolute;
+    left: -43rem;
+    top: 1rem;
+  }
+.frame_map{
+  width: 100%;
+
+
 }
-.accomodation{
+
+}
+.frame_map{
+  width: 100%;
+ height: 40rem;
+
+}
+
+.accomodation {
   display: flex;
   flex-direction: column;
 }
- .card-container__accomodation {
+
+.card-container__accomodation {
 
   border-style: none;
   margin: 3%;
@@ -1190,16 +1231,18 @@ h2 {
 
 
 }
-.card-container__accomodation{
+
+.card-container__accomodation {
   background-color: var(--color-blue-dark-2);
   opacity: 0.9;
 }
 
-.card-container__names{
+.card-container__names {
   display: flex;
 
 
 }
+
 .card-container__names img {
 
   width: 32rem;
@@ -1221,14 +1264,15 @@ h2 {
 
 .card-container__images img {
 
-padding: 0;
+  padding: 0;
 
 }
-.frame1{
+
+.frame1 {
   background-color: rebeccapurple;
   display: flex;
   margin-left: 50rem;
- 
+
 
 }
 
@@ -1238,29 +1282,29 @@ padding: 0;
   width: 30rem;
   padding: 1.5rem;
 }
-.card-container__details
-h3{
+
+.card-container__details h3 {
   margin-top: 10%;
-  color:var(--color-blue-light-1);
-  
+  color: var(--color-blue-light-1);
+
 }
 
-.card-container__names
-h2 {
+.card-container__names h2 {
 
   color: white;
   padding: 15rem;
   margin: 1rem;
 
-} 
+}
 
 .card-container__descrip {
 
-display: block;
-width: 58rem;
-padding-left: 4rem;
+  display: block;
+  width: 58rem;
+  padding-left: 4rem;
 
 }
+
 .card-container__descrip p {
   color: white;
   display: block;
@@ -1273,7 +1317,7 @@ padding-left: 4rem;
 }
 
 .card-container__descrip h3 {
-  color:white;
+  color: white;
 
 }
 
@@ -1289,12 +1333,12 @@ padding-left: 4rem;
   transition: all 0.7s ease;
   position: relative;
   display: inline-block;
- 
+
 }
 
 .btn-here {
   background: var(--color-grey-c0);
-  color:black;
+  color: black;
   line-height: 42px;
   padding: 0;
   border: none;
@@ -1313,22 +1357,23 @@ padding-left: 4rem;
   top: inherit;
   left: 0;
   bottom: 0;
-} 
+}
 
 /*youtube*/
-*  Videos on homepage  */
-.video{
+* Videos on homepage */ .video {
 
   padding: 14rem;
   justify-content: center;
   margin-left: 15rem;
-  
+
 
 }
-.youtube-video{
-border: 2px solid var(--color-blue-light-1);
+
+.youtube-video {
+  border: 2px solid var(--color-blue-light-1);
 
 }
+
 /* travel page */
 /*-------------------------------------------------------table--------------------------------------------------------------*/
 .table-content {
@@ -1374,6 +1419,7 @@ tr:hover {
   background-color: rgba(84, 198, 211, 0.3);
 
 }
+
 @media screen and (max-width: 650px) and (max-width: 500px) and (max-width: 475px) {
 
 
@@ -1381,10 +1427,10 @@ tr:hover {
   table {
 
     width: 100%;
-    font-size : 1.2rem;
+    font-size: 1.2rem;
   }
 
- 
+
 
   .info table {
 
@@ -1417,3 +1463,5 @@ tr:hover {
     width: 100%;
   }
 }
+
+/*sightseeing*/
