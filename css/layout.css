@@ -1289,3 +1289,90 @@ padding-left: 4rem;
 } 
 
 /* travel page */
+/*-------------------------------------------------------table--------------------------------------------------------------*/
+.table-content {
+
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+table {
+
+  width: 780px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 12px;
+  background-color: rgba(84, 198, 211, 0.2);
+  color: whitesmoke;
+  color: black;
+  border-right: var(--line);
+}
+
+th {
+  text-align: left;
+}
+
+thead,
+th {
+
+  background-color: var(--color-blue-light-3);
+  color: var(--color-white);
+
+}
+
+tr:hover {
+
+  background-color: rgba(84, 198, 211, 0.3);
+
+}
+@media screen and (max-width: 650px) and (max-width: 500px) and (max-width: 475px) {
+
+
+
+  table {
+
+    width: 100%;
+    font-size : 1.2rem;
+  }
+
+ 
+
+  .info table {
+
+    width: 100%;
+    margin-left: -2rem;
+  }
+
+  .info li {
+    text-align: left;
+    padding-right: 1rem;
+  }
+
+
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  table {
+
+    width: 100%;
+  }
+
+
+
+}
+
+@media screen and (max-width:1500px) {
+  table {
+    width: 100%;
+  }
+}
