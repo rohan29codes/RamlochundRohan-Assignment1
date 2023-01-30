@@ -1168,6 +1168,11 @@ h2 {
   
   
   }
+  .card-container__names{
+    display: flex;
+    flex-direction: column;
+  
+  }
   
 }
 .accomodation{
@@ -1192,6 +1197,7 @@ h2 {
 
 .card-container__names{
   display: flex;
+
 
 }
 .card-container__names img {
