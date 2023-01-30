@@ -399,7 +399,8 @@ body {
 
 .ICACIE-content__daysLeft {
 
-  background-color: rgb(207, 205, 205);
+  background-color: var(--color-grey-c0);
+  opacity: 0.8;
   box-shadow: 7px 2px 5px black;
 
 
@@ -785,7 +786,7 @@ body {
 
 
     margin: 1% 0.5% 2% 0.5%;
-    width: 100%;
+    width: 95%;
 
   }
 }
@@ -1044,7 +1045,7 @@ body {
   justify-content: left;
 }
 
-.card-container {
+.card-container{
 
   border-radius: 1px;
   background-color: var(--color-blue-light-1);
@@ -1053,6 +1054,9 @@ body {
   line-height: 1.5;
 
 }
+
+
+
 
 .card-container__name img {
 
@@ -1150,7 +1154,7 @@ h2 {
  .card-container__accomodation {
 
   border-style: none;
-  background-color: var(--color-blue-dark-2);
+  /* background-color: var(--color-blue-dark-2); */
   margin: 1rem;
   width: 70rem;
 
@@ -1159,13 +1163,18 @@ h2 {
 
 
 }
+.card-container__accomodation{
+  background-color: var(--color-blue-dark-2);
+  opacity: 0.9;
+}
+
 .card-container__names{
   display: flex;
 
 }
 .card-container__names img {
 
-  width: 40rem;
+  width: 33rem;
   height: 20rem;
   box-sizing: border-box;
   transition: transform .2s;
@@ -1207,7 +1216,8 @@ h2 {
 .card-container__descrip {
 
 display: block;
-width: 60rem;
+width: 58rem;
+padding-left: 4rem;
 
 }
 .card-container__descrip p {
@@ -1253,3 +1263,4 @@ width: 60rem;
   left: 0;
   bottom: 0;
 } 
+
