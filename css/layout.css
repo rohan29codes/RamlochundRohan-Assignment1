@@ -1198,8 +1198,14 @@ h2 {
 padding: 0;
 
 }
+.frame{
+  background-color: rebeccapurple;
+  display: flex;
+  margin-left: 50rem;
+ 
 
-
+}
+/*Heading for accomodation*/
 .card-container__details {
 
   width: 30rem;
@@ -1260,17 +1266,17 @@ padding-left: 4rem;
 }
 
 .btn-here {
-  background: var(--color-blue-dark-1);
-  color: #fff;
+  background: var(--color-grey-c0);
+  color:black;
   line-height: 42px;
   padding: 0;
   border: none;
 
-
+}
 
 .btn-here:hover {
-  background: var(--color-blue-dark-2);
-  color: var(--color-blue-light-1);
+  background: var(--color-blue-light-2);
+  color: black;
 
 }
 
