@@ -1288,6 +1288,20 @@ padding-left: 4rem;
   bottom: 0;
 } 
 
+/*youtube*/
+*  Videos on homepage  */
+.video{
+
+  padding: 14rem;
+  justify-content: center;
+  margin-left: 15rem;
+  
+
+}
+.youtube-video{
+border: 2px solid var(--color-blue-light-1);
+
+}
 /* travel page */
 /*-------------------------------------------------------table--------------------------------------------------------------*/
 .table-content {
