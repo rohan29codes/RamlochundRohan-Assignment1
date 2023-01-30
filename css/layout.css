@@ -901,7 +901,7 @@ ICACIE-title1 h3 {
 }
 
 /*Media for keynotes also */
-@media screen and (max-width: 650px) and (max-width: 500px) and (max-width: 475px) {
+@media screen and (max-width: 650px) and (max-width: 500px) and (max-width: 786px) {
 
   .ICACIE-content {
     margin-right: 1.5rem;
