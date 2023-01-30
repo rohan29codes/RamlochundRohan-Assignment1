@@ -370,6 +370,9 @@ body {
   color: var(--color-blue-light-3);
 
 }
+ICACIE-title1 h3{
+  color: red;
+}
 
 /*Left content part1*/
 .ICACIE-content__daysLeft {
@@ -1032,6 +1035,8 @@ body {
   }
 
 
+  
+
 
 
 
@@ -1150,6 +1155,21 @@ h2 {
   bottom: 0;
 }
 /*Accomodation*/
+@media screen and (max-width: 800px) {
+
+  .card-container__detail {
+
+
+
+ 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  
+  
+  }
+  
+}
 .accomodation{
   display: flex;
   flex-direction: column;
@@ -1205,6 +1225,7 @@ padding: 0;
  
 
 }
+
 /*Heading for accomodation*/
 .card-container__details {
 
