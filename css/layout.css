@@ -1,25 +1,26 @@
+/*Set header height*/
 .header {
   height: 15rem;
 }
-
+/*Set html & font-family*/
 html,
 body {
   overflow-x: hidden;
   font-family: Optima;
 }
 
-/* Logo images */
+/*Logo div*/
 .logos {
   display: flex;
   justify-content: center;
 }
-
+/*Logo image*/
 .logos img {
   width: 20rem;
   margin: 1.5rem;
 }
 
-/* Media query for logos */
+/* Media query for logos & header */
 @media screen and (max-width: 800px) {
   .logos {
     display: flex;
@@ -41,7 +42,7 @@ body {
   position: relative;
 
 }
-
+/* Navigation elements */
 .navbar a {
   float: left;
   display: block;
@@ -53,7 +54,7 @@ body {
 
 }
 
-
+/* Navigation elements on hover */
 .navbar a:hover {
 
   color: var(--color-white);
@@ -61,9 +62,9 @@ body {
 
 }
 
-
+/* Navigation elements set active */
 .navbar a.active {
-  background-color: rgb(0, 171, 189);
+  background-color: var(--color-blue-dark-1);
   color: white;
 }
 
@@ -78,7 +79,7 @@ body {
 }
 
 .navbar__link::before {
-  content: '';
+
   position: absolute;
   top: 0;
   left: 0;
@@ -86,11 +87,6 @@ body {
   height: 100%;
 
   transition: all 0.7s;
-}
-
-.navbar__link:hover::before {
-  opacity: 0;
-  transform: scale(0.5, 0.5);
 }
 
 .navbar__link::after {
@@ -108,7 +104,6 @@ body {
 
 
 /*Media query for navigation bar*/
-
 @media screen and (max-width: 800px) {
   .navbar a:not(:first-child) {
     display: none;
@@ -118,12 +113,8 @@ body {
     float: right;
     display: block;
   }
-
-
-
-
 }
-
+/*Media query for navigation bar*/
 @media screen and (max-width: 800px) {
 
   .navbar.responsive {
@@ -144,22 +135,16 @@ body {
 
 
   }
-
   .ICACIE-content {
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     width: 100%;
     margin: auto;
-
-
   }
 
   .ICACIE-content__desc {
-
-
     width: 100%;
-    margin: 1% 0.5% 2% 0.5%;
-
+    margin: 1% 0.6% 2% 0.6%;
 
   }
 
@@ -184,11 +169,9 @@ body {
   flex-wrap: wrap;
 
 }
-
+/*Advert for UDM & ICACIA paragraph*/
 .advert p {
-
-
-  font-weight: 700;
+  font-weight: 800;
   text-align: center;
   font-size: 1.5rem;
 
@@ -206,7 +189,7 @@ body {
 
 
 }
-
+/*css for sliding advert*/
 @keyframes shine {
   0% {
     background-position-x: -500%;
@@ -223,7 +206,7 @@ body {
   width: 100%;
 
 }
-
+/* Banner */
 .banner-description {
 
   display: flex;
@@ -238,12 +221,12 @@ body {
 
 
 }
-
+/* Banner */
 .banner-description__place {
 
   font-weight: 600;
 }
-
+/* Banner */
 .banner-description__title {
 
   font-size: 2.5rem;
@@ -289,7 +272,7 @@ body {
 
 
 }
-
+/*media query for banner*/
 @media screen and (max-width: 750px) and (max-width:600px) {
 
 
@@ -307,7 +290,7 @@ body {
 
 
 }
-
+/*media query for banner*/
 @media screen and (max-width: 650px) and (max-width: 500px) and (max-width: 475px) {
 
 
@@ -341,7 +324,7 @@ body {
 
 
 }
-
+/*ICACIE content description*/
 .ICACIE-content__desc {
 
   margin-top: 20rem;
@@ -357,7 +340,7 @@ body {
   padding: 1.6rem;
   flex-direction: column;
 }
-
+/*ICACIE title*/
 .ICACIE-title {
 
   color: var(--color-blue-light-3);
@@ -383,26 +366,22 @@ ICACIE-title1 h3 {
 
   height: 200rem;
 }
-
-/* .container{
-  background-color: red;
-} */
+/*Left content part2*/
 .ICACIE-content__daysLeft,
 .day,
 .day-year {
 
   text-align: center;
 }
-
+/*Left content part2*/
 .ICACIE-content__daysLeft {
 
   background-color: var(--color-grey-c0);
   opacity: 0.7;
   box-shadow: 7px 2px 2px var(--color-grey-c7);
 
-
 }
-
+/*Left content part2*/
 .ICACIE-content__daysLeft h2 {
 
   color: var(--color-blue-dark-1);
@@ -442,7 +421,7 @@ ICACIE-title1 h3 {
   margin-left: 2.6rem;
 }
 
-/*--------------------------------------------------------important dates---------------------------------------------------*/
+/*important dates*/
 .important-date {
 
   text-align: left;
@@ -451,7 +430,6 @@ ICACIE-title1 h3 {
   font-size: 1.5rem;
   border: 1px solid var(--color-blue-dark-2);
   padding: 2%;
-
 
 
 }
@@ -478,7 +456,7 @@ ICACIE-title1 h3 {
   color: var(--color-blue-light-1);
 }
 
-/*----------------------------------------------------publication partners--------------------------------------------------*/
+/*publication partners*/
 
 .publication-partner {
 
@@ -559,7 +537,7 @@ ICACIE-title1 h3 {
   transform: scale(1.7);
 }
 
-/*-----------------------------------------------------JOURNAL--------------------------------------------------------------*/
+/*JOURNAL*/
 .journal-support {
 
   display: flex;
@@ -657,15 +635,6 @@ ICACIE-title1 h3 {
   color: var(--color-blue-dark-1);
 }
 
-/* .fb {
-
-  margin-top: 2rem;
-  height: 400px;
-  padding-bottom: 2.5rem;
-  border: none;
-
-} */
-
 .journal-support__book {
 
   margin: 1.5rem 0 0 2rem;
@@ -694,7 +663,7 @@ ICACIE-title1 h3 {
 
   list-style-type: none;
 }
-
+/*footer */
 .footer {
 
 
@@ -707,13 +676,13 @@ ICACIE-title1 h3 {
   margin-top: 8rem;
 
 }
-
+/*footer img */
 .footer-img img {
 
   padding: 1.5rem;
   width: 35%;
 }
-
+/*footer social link*/
 .footer-social__links {
 
   padding: 10px 0;
@@ -721,11 +690,11 @@ ICACIE-title1 h3 {
   padding-left: 0;
   display: flex;
   width: 100%;
-  border-bottom: 1px solid #555;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid var(--color-grey-c0)
+
 }
 
-
+/*footer social link*/
 .social__links {
   display: flex;
   list-style-type: none;
@@ -768,9 +737,6 @@ ICACIE-title1 h3 {
 @media screen and (max-width: 750px) {
 
 
-
-
-
   .ICACIE-content__desc {
 
 
@@ -788,7 +754,7 @@ ICACIE-title1 h3 {
   }
 }
 
-
+/*bigger screen resolution*/
 
 @media screen and (max-width: 1325px) {
   .ICACIE-content{
