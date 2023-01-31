@@ -754,7 +754,7 @@ ICACIE-title1 h3 {
   }
 }
 
-/*bigger screen resolution*/
+/*bigger screen*/
 
 @media screen and (max-width: 1325px) {
   .ICACIE-content{
@@ -1013,7 +1013,6 @@ ICACIE-title1 h3 {
 }
 
 /*Speaker*/
-
 .inaugural-speaker {
 
   display: flex;
@@ -1078,8 +1077,6 @@ h2 {
 
 }
 
-
-
 .keynote-speakers,
 .inaugural-speaker {
 
@@ -1130,14 +1127,9 @@ h2 {
 
   .card-container__detail {
 
-
-
-
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-
-
 
 
   }
@@ -1437,7 +1429,7 @@ tr:hover {
   }
 }
 
-/*sightseeing*/
+
 
 /*SIGN IN*/
 .signin-form {
