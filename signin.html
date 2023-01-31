@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Links for font & css below -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <title>Home</title>
+
+
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- Logo ICACIE & UDM -->
+    <div class="header">
+      <div class="logos">
+        <div class="logo1"></div>
+        <img src="images/logo.png" alt="ICACIE LOGO">
+        <img src="images/udm.png" alt="UDM LOGO">
+      </div>
+    </div>
+
+    <!--Navigation bar-->
+    <div class="navbar" id="myTopnav">
+      <a href="index.html" class="navbar__link">Home</a>
+      <a href="speaker.html" class="navbar__link">Keynotes</a>
+      <a href="#" class="navbar__link">Commitee</a>
+      <a href="#" class="navbar__link">Call for papers</a>
+      <a href="accomodation.html" class="navbar__link">Accommodation</a>
+      <a href="sightseeing.html" class="navbar__link">Sightseeing</a>
+      <a href="travel.html" class="navbar__link">Travel</a>
+      <a href="#" class="navbar__link">Author</a>
+      <a href="#" class="navbar__link">Registration</a>
+      <a href="#" class="navbar__link">Program</a>
+      <a href="#" class="navbar__link">Sponsors</a>
+      <a href="#" class="navbar__link">Contact Us</a>
+      <a href="signin.html" class="active navbar__link">Sign in</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <!--Advert-->
+    <div class="advert">
+      <p>8th Edition of ICACIE 2023 & University Des Mascareignes Greets You. </p>
+    </div>
+
+    <!--Banner & description-->
+    <div class="banner">
+
+      <div class="banner-img">
+        <img src="images/tech1.png" alt="">
+      </div>
+
+      <div class="banner-description">
+        <h1 class="banner-description__title">8<sup>th</sup> International Conference on Advanced Computing and
+          Intelligent Engineering</h1>
+        <p class="banner-description__place">Université des Mascareignes (UdM), Mauritius</p>
+        <p class="banner-description__date">29-31 January, 2023</p>
+      </div>
+
+    </div>
+
+    <!-- Contents -->
+
+    <div class="ICACIE-content">
+      <div class="signin-form" style="margin-top: 15rem;">
+        <h1>SIGN IN</h1>
+        <form action="">
+          <label for="username">Username :</label>
+          <input type="text" id="username" name="username">
+        
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password">
+        
+          <button type="submit">Sign In</button>
+        </form>
+      </div>
+
+
+
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+
+
+
+        <div class="footer-social__links">
+          <ul class="social__links">
+            <li>
+              <a href="https://www.facebook.com/icacie.conf/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/groups/10339002/" target="_blank"><i
+                  class="fab fa-twitter fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+            </li>
+
+          </ul>
+        </div>
+
+
+      </div>
+
+      <div class="copyright">
+        <p>Copyright © ICACIE 2023 - All Rights Reserved.</p>
+        <div>
+          <p>
+            Republic of Mauritius
+          </p>
+        </div>
+      </div>
+
+
+
+    </footer>
+
+
+
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+  </script>
+</body>
+
+</html>

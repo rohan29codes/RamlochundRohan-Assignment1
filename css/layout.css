@@ -156,6 +156,7 @@ body {
   }
 
   .ICACIE-content {
+    /* display: flex; */
     flex-direction: column;
     width: 100%;
     margin: auto;
@@ -1476,3 +1477,50 @@ tr:hover {
 }
 
 /*sightseeing*/
+
+/*SIGN IN*/
+.signin-form {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 var(--color-blue-dark-2);
+  transition: 0.4s;
+  border-radius: 5px;
+  background-color: var(--color-grey-c0);
+  opacity: 0.9;
+  padding: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .signin-form {
+    width: 100%;
+
+  }
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 14px 22px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid var(--color-blue-light-2);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button[type=submit] {
+  width: 70%;
+  padding: 14px 20px;
+  background-color: var(--color-blue-dark-2);
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 4rem;
+  color: var(--color-blue-dark-1);
+}
